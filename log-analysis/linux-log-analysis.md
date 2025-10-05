@@ -10,7 +10,7 @@ The goal for me was to identify brute-force SSH attempts using Linux command-lin
 I am a SOC analyst reviewing authentication logs on a Linux server.  
 I suspected repeated failed SSH login attempts coming from a single IP address.
 
-Log sample (from `/var/log/auth.log`):
+Log sample from /var/log/auth.log:
 
 Oct 5 13:45:02 server sshd[2231]: Failed password for root from 192.168.56.105 port 58933 ssh2
 
