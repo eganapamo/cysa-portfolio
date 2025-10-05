@@ -25,6 +25,7 @@ grep "Failed password" /var/log/auth.log | wc -l
 This command counts the total number of failed SSH logins.
 
 2️⃣ Identify Top Offending IPs
+
 grep "Failed password" /var/log/auth.log | awk '{print $(NF-3)}' | sort | uniq -c | sort -nr
 This command lists which IP addresses caused the most failed attempts.
 grep filters failed logins
