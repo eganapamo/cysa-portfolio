@@ -26,7 +26,7 @@ Oct 5 13:45:11 server sshd[2231]: Accepted password for root from 192.168.56.105
 
 1️⃣ Count Failed Login Attempts
 
-grep "Failed password" /var/log/auth.log | wc -1
+grep "Failed password" /var/log/auth.log | wc -l
 
 This command counts the total number of failed SSH logins.
 
